@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{department_name}",
+ "creation": "2024-06-21 01:12:35.256552",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "department_head",
+  "column_break_kjuj",
+  "manager_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department_name",
+   "options": "Colloge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department_head",
+   "fieldtype": "Link",
+   "label": "Department_head",
+   "options": "Teacher"
+  },
+  {
+   "fetch_from": "department_head.full_name",
+   "fieldname": "manager_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Manager Name"
+  },
+  {
+   "fieldname": "column_break_kjuj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-22 03:09:05.903888",
+ "modified_by": "Administrator",
+ "module": "std",
+ "name": "Colloge Department",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
